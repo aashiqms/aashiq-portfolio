@@ -1,15 +1,9 @@
-<div
-    class="
+<div class="
       antialiased
-      bg-gradient-to-r
-      from-pink-300
-      via-purple-300
-      to-indigo-400
-    "
-  >
+      
+    " style="background: url('assets/images/confectionary.png');">
   <header>
-     <nav
-        class="
+    <nav class="
           flex flex-wrap
           items-center
           justify-between
@@ -18,55 +12,240 @@
           md:py-0
           px-4
           text-lg text-gray-700
-          bg-white
-        "
-      >
-       <div>
-          <a href="#">
-            Aashiq M S
-          </a>
-        </div>
-       
-         
-       
-       <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-          <ul
-            class="
+        ">
+      <!-- <div>
+        <a href="#">
+          Aashiq M S
+        </a>
+      </div> -->
+
+
+
+      <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul class="
               pt-4
               text-base text-gray-700
               md:flex
               md:justify-between 
-              md:pt-0"
-          >
-           
-            <li>
-              <a
-                class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-                href="#"
-                >Theme</a
-              >
-            </li>
-          </ul>
-        </div>
+              md:pt-0">
+
+          <!-- <li>
+            <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="#">Theme</a>
+          </li> -->
+        </ul>
+      </div>
     </nav>
   </header>
-  
-  
-  <div class="px-4">
+
+
+  <div class="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[30px]" style="padding-bottom: 100px;">
+    <!-- 220 -->
+    <div class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
       <div
-        class="
-          flex
-          justify-center
-          items-center
-          bg-white
-          mx-auto
-          max-w-2xl
-          rounded-lg
-          my-16
-          p-16
-        "
-      >
-        <h1 class="text-2xl font-medium">Responsive Navbar with TailwindCSS</h1>
+        class="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+        <img src="assets/images/hero.jpg"
+          class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+          alt="about">
+        <div class="pt-[100px] pb-8">
+          <h2 class="mt-6 mb-1 text-[26px] font-semibold dark:text-white"> Aashiq M S </h2>
+          <h3 class="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+            UI Developer </h3>
+          <div class="flex justify-center space-x-3">
+            <a href="https://github.com/aashiqms" target="_blank" rel="noopener noreferrer">
+              <span class="socialbtn text-[#E43B81]">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <span class="socialbtn text-[#0072b1]">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </span>
+            </a>
+          </div>
+          <div class="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5 items-center">
+              <span class="socialbtn bg-white dark:bg-black text-[#E43B81] shadow-md">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Phone </p>
+                <p class="dark:text-white">+91 866 729 6854</p>
+              </div>
+            </div>
+            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5 items-center">
+              <span class="socialbtn bg-white dark:bg-black text-[#6AB7B9] shadow-md">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Email </p>
+                <p class="dark:text-white">iamaashiqms@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5 items-center">
+              <span class="socialbtn bg-white dark:bg-black text-[#FD7890] shadow-md">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Location </p>
+                <p class="dark:text-white">Chennai, India</p>
+              </div>
+            </div>
+            <div class="flex py-2.5 items-center">
+              <span class="socialbtn bg-white dark:bg-black text-[#C37CEB] shadow-md">
+                <i class="fa-solid fa-calendar-days"></i>
+              </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Birthday </p>
+                <p class="dark:text-white">Feb 1st, 1996</p>
+              </div>
+            </div>
+          </div>
+
+          <button (click)="downloadResume()"
+            class="dowanload-btn from-rose-400 mt-3 via-fuchsia-500 to-indigo-500 bg-gradient-to-r text-white p-3 rounded-full ps-3 pe-3">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            Download Resume </button>
+        </div>
       </div>
     </div>
+    <div class="col-span-12 lg:col-span-8">
+      <div class="right-content ">
+        <div class="parts">
+          <h3 class="big-heading  text-[#E43B81] font-bold">Who am I</h3>
+          <div class="info" style="padding-bottom: 0;">
+            <div class="headings">
+              <h2>Aashiq M S</h2>
+              <h3 class="text-slate-500 font-semibold">UI developer / Product Designer</h3>
+            </div>
+            <div class="row para">
+              <div class="col-md-6">
+                <p>UI developer with 3 years of experience in Software Design and Development. Meticulous Engineer with strong debugging skills. Ability to work effectively with product development and systems management.</p>
+              </div>
+            
+            </div>
+            
+
+          </div>
+        </div>
+        <div class="parts" style="margin-bottom:0;">
+          <h3 class="big-heading  text-[#E43B81] font-bold" style="padding-top: 0;"> Professional skills</h3>
+
+          <div class="info">
+            <div class="skill-block">
+              <div class="row">
+                <div class="col-md-11">
+                  <div class="skill">
+                    <h6>Html/css</h6>
+                    <div class="progress">
+                      <div class="coding-percentage" style="width:80%;"></div>
+
+                    </div>
+
+                    <h6>Angular</h6>
+                    <div class="progress">
+                      <div class="coding-percentage" style="width:40%;"></div>
+
+                    </div>
+
+                    <h6>Javascript</h6>
+                    <div class="progress">
+                      <div class="coding-percentage" style="width:80%;"></div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="skill-block">
+              <div class="row">
+                <div class="col-md-11">
+                  <div class="skill">
+                    <h6>Photoshop</h6>
+                    <div class="progress">
+                      <div class="design-percentage" style="width:30%;"></div>
+
+                    </div>
+
+                    <h6>Illustrator</h6>
+                    <div class="progress">
+                      <div class="design-percentage" style="width:60%;"></div>
+
+                    </div>
+
+                    <h6>Figma</h6>
+                    <div class="progress">
+                      <div class="design-percentage" style="width:45%;"></div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <div class="skill-block">
+              <div class="row">
+                <div class="col-md-11">
+                  <div class="skill">
+                    <h6>RESPONSIBLE</h6>
+                    <div class="progress">
+                      <div class="assets-percentage" style="width:85%;"></div>
+
+                    </div>
+
+                    <h6>Multitasking</h6>
+                    <div class="progress">
+                      <div class="assets-percentage" style="width:70%;"></div>
+
+                    </div>
+
+                    <h6>Creative</h6>
+                    <div class="progress">
+                      <div class="assets-percentage" style="width:65%;"></div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="parts">
+          <h3 class="big-heading text-[#E43B81] font-bold">Education</h3>
+          <div class="timeline info" style="padding-left:60px;">
+            <ul>
+              <li class="list-unstyled">
+                <i class="fa fa-graduation-cap cap" aria-hidden="true"></i>
+              </li>
+
+              <li class="list-unstyled">
+                <span class="time" style="color:#E43B81;"> 2017</span>
+                <div><strong>St Joseph's Institute of Technology, Chennai </strong></div>
+                <div class="major"><i class="fa fa-book" aria-hidden="true"></i>Information Technology</div>
+              </li>
+
+              <li class="list-unstyled">
+                <span class="time"> 2013</span>
+                <div><strong>Gill Adarash Matriculation Higher Secondary School, Chennai</strong></div>
+                <div class="major"><i class="fa fa-book" aria-hidden="true"></i>HSC</div>
+              </li>
+
+             
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </div>

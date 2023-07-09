@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aashiqms-github-io';
+
+  downloadResume() {
+    window.open('/assets/files/resume_aashiq_june.pdf', '_blank');
+
+  }
 }
