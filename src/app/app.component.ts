@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'aashiqms-github-io';
+  title = 'aashiqms';
+
+  currentHeader: number = 0;
 
   downloadResume() {
     window.open('/assets/files/resume_aashiq_june.pdf', '_blank');
