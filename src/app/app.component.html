@@ -72,10 +72,11 @@
       </div>
     </div>
     <div class="col-span-12 lg:col-span-8 ">
-      
+
       <div class="header-bar flex justify-end w-fit bg-white items-center p-[28px] rounded-xl ms-auto me-3">
-        
-        <div [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 0}" class="header-card active me-3 flex flex-col items-center p-3 rounded-lg ">
+
+        <div [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 0}"
+          class="header-card active me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-user"></i>
           </div>
@@ -115,6 +116,154 @@
             Contact
           </div>
         </div>
+      </div>
+      <div class="content-card bg-white rounded-2xl mt-[30px] me-3">
+        <ng-container *ngIf="currentHeader === 0">
+          <div class="right-content rounded-2xl">
+            <div class="parts">
+              <div class="three" style="    padding: 40px 40px 15px 40px;">
+                <h1>About Me</h1>
+              </div>
+              <div class="info" style="padding-bottom: 0;">
+                <div class="headings">
+                  <h2 class="text-2xl font-bold">Aashiq M S</h2>
+                  <h3 class="text-slate-500 font-semibold">UI developer</h3>
+                </div>
+                <div class="row para">
+                  <div class="col-md-6">
+                    <p>UI developer with 3 years of experience in Software Design and Development. Meticulous Engineer
+                      with strong debugging skills. Ability to work effectively with product development and systems
+                      management.</p>
+                  </div>
+  
+                </div>
+  
+  
+              </div>
+            </div>
+  
+  
+            <div class="parts">
+              <h3 class="big-heading text-[#8452fa] font-bold">Education</h3>
+              <div class="timeline info" style="padding-left:60px;">
+                <ul>
+                  <li class="list-unstyled">
+                    <i class="fa fa-graduation-cap cap" aria-hidden="true"></i>
+                  </li>
+  
+                  <li class="list-unstyled">
+                    <span class="time" style="color:#8452fa;"> 2017</span>
+                    <div><strong>St Joseph's Institute of Technology, Chennai </strong></div>
+                    <div class="major"><i class="fa fa-book" aria-hidden="true"></i><span class="font-bold">B. Tech</span>, Information Technology</div>
+                  </li>
+  
+                  <li class="list-unstyled">
+                    <span class="time"> 2013</span>
+                    <div><strong>Gill Adarash Matriculation Higher Secondary School, Chennai</strong></div>
+                    <div class="major"><i class="fa fa-book" aria-hidden="true"></i>HSC</div>
+                  </li>
+  
+  
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+        </ng-container>
+        <ng-container *ngIf="currentHeader === 1">
+          <div class="parts" style="margin-bottom:0;">
+            <h3 class="big-heading  text-[#8452fa] font-bold" style="padding-top: 0;"> Professional skills</h3>
+  
+            <div class="info">
+              <div class="skill-block">
+                <div class="row">
+                  <div class="col-md-11">
+                    <div class="skill">
+                      <h6>Html/css</h6>
+                      <div class="progress">
+                        <div class="coding-percentage" style="width:80%;"></div>
+  
+                      </div>
+  
+                      <h6>Angular</h6>
+                      <div class="progress">
+                        <div class="coding-percentage" style="width:40%;"></div>
+  
+                      </div>
+  
+                      <h6>Javascript</h6>
+                      <div class="progress">
+                        <div class="coding-percentage" style="width:80%;"></div>
+  
+                      </div>
+  
+  
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="skill-block">
+                <div class="row">
+                  <div class="col-md-11">
+                    <div class="skill">
+                      <h6>Photoshop</h6>
+                      <div class="progress">
+                        <div class="design-percentage" style="width:30%;"></div>
+  
+                      </div>
+  
+                      <h6>Illustrator</h6>
+                      <div class="progress">
+                        <div class="design-percentage" style="width:60%;"></div>
+  
+                      </div>
+  
+                      <h6>Figma</h6>
+                      <div class="progress">
+                        <div class="design-percentage" style="width:45%;"></div>
+  
+                      </div>
+  
+  
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="skill-block">
+                <div class="row">
+                  <div class="col-md-11">
+                    <div class="skill">
+                      <h6>RESPONSIBLE</h6>
+                      <div class="progress">
+                        <div class="assets-percentage" style="width:85%;"></div>
+  
+                      </div>
+  
+                      <h6>Multitasking</h6>
+                      <div class="progress">
+                        <div class="assets-percentage" style="width:70%;"></div>
+  
+                      </div>
+  
+                      <h6>Creative</h6>
+                      <div class="progress">
+                        <div class="assets-percentage" style="width:65%;"></div>
+  
+                      </div>
+  
+  
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>
