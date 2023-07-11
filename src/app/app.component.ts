@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'aashiqms';
 
   currentHeader: number = 0;
+  resumeLoaded: boolean = false;
 
   doc = 'https://iamaashiqms.netlify.app/assets/files/resume_aashiq_june.pdf';
 
@@ -23,6 +24,7 @@ export class AppComponent {
   }
 
   contentLoaded() {
+    this.resumeLoaded = true;
     console.log('File loaded');
   }
 }
