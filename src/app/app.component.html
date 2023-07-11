@@ -75,7 +75,7 @@
 
       <div class="header-bar flex justify-end w-fit bg-white items-center p-[28px] rounded-xl ms-auto me-3">
 
-        <div [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 0}"
+        <div (click)="changeCurrentContent(0)" [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 0}"
           class="header-card active me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-user"></i>
@@ -84,7 +84,7 @@
             About
           </div>
         </div>
-        <div class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+        <div (click)="changeCurrentContent(1)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 1}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-user"></i>
           </div>
@@ -92,20 +92,20 @@
             Resume
           </div>
         </div>
-        <div class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
-          <div>
-            <i class="fa-regular fa-user"></i>
-          </div>
-          <div class="text-sm">
-            Work
-          </div>
-        </div>
-        <div class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+        <div  (click)="changeCurrentContent(2)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 2}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-user"></i>
           </div>
           <div class="text-sm">
             Skills
+          </div>
+        </div>
+        <div  (click)="changeCurrentContent(1)" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+          <div>
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="text-sm">
+            Work
           </div>
         </div>
         <div class="header-card flex flex-col items-center p-3 rounded-lg ">
@@ -170,10 +170,11 @@
   
           </div>
         </ng-container>
-        <ng-container *ngIf="currentHeader === 1">
+        <ng-container *ngIf="currentHeader === 2">
           <div class="parts" style="margin-bottom:0;">
-            <h3 class="big-heading  text-[#8452fa] font-bold" style="padding-top: 0;"> Professional skills</h3>
-  
+            <div class="three" style="    padding: 40px 40px 15px 40px;">
+              <h1>Professional Skills</h1>
+            </div>
             <div class="info">
               <div class="skill-block">
                 <div class="row">

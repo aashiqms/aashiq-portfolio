@@ -14,4 +14,8 @@ export class AppComponent {
     window.open('/assets/files/resume_aashiq_june.pdf', '_blank');
 
   }
+
+  changeCurrentContent(event: any) {
+    this.currentHeader = event;
+  }
 }
