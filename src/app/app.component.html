@@ -75,7 +75,8 @@
 
       <div class="header-bar flex justify-end w-fit bg-white items-center p-[28px] rounded-xl ms-auto me-3">
 
-        <div (click)="changeCurrentContent(0)" [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 0}"
+        <div (click)="changeCurrentContent(0)"
+          [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 0}"
           class="header-card active me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-user"></i>
@@ -84,7 +85,9 @@
             About
           </div>
         </div>
-        <div (click)="changeCurrentContent(1)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 1}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+        <div (click)="changeCurrentContent(1)"
+          [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 1}"
+          class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-file-lines"></i>
           </div>
@@ -92,14 +95,19 @@
             Resume
           </div>
         </div>
-        <div  (click)="changeCurrentContent(2)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 2}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+        <div (click)="changeCurrentContent(2)"
+          [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 2}"
+          class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
-            <i class="fa-solid fa-code"></i>          </div>
+            <i class="fa-solid fa-code"></i>
+          </div>
           <div class="text-sm">
             Skills
           </div>
         </div>
-        <div  (click)="changeCurrentContent(3)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 3}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+        <div (click)="changeCurrentContent(3)"
+          [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 3}"
+          class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fas fa-briefcase"></i>
           </div>
@@ -107,7 +115,9 @@
             Work
           </div>
         </div>
-        <div (click)="changeCurrentContent(4)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 4}" class="header-card flex flex-col items-center p-3 rounded-lg ">
+        <div (click)="changeCurrentContent(4)"
+          [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 4}"
+          class="header-card flex flex-col items-center p-3 rounded-lg ">
           <div>
             <i class="fa-regular fa-address-book"></i>
           </div>
@@ -134,14 +144,14 @@
                       with strong debugging skills. Ability to work effectively with product development and systems
                       management.</p>
                   </div>
-  
+
                 </div>
-  
-  
+
+
               </div>
             </div>
-  
-  
+
+
             <div class="parts">
               <h3 class="big-heading text-[#8452fa] font-bold">Education</h3>
               <div class="timeline info" style="padding-left:60px;">
@@ -149,25 +159,31 @@
                   <li class="list-unstyled">
                     <i class="fa fa-graduation-cap cap" aria-hidden="true"></i>
                   </li>
-  
+
                   <li class="list-unstyled">
                     <span class="time" style="color:#8452fa;"> 2017</span>
                     <div><strong>St Joseph's Institute of Technology, Chennai </strong></div>
-                    <div class="major"><i class="fa fa-book" aria-hidden="true"></i><span class="font-bold">B. Tech</span>, Information Technology</div>
+                    <div class="major"><i class="fa fa-book" aria-hidden="true"></i><span class="font-bold">B.
+                        Tech</span>, Information Technology</div>
                   </li>
-  
+
                   <li class="list-unstyled">
                     <span class="time"> 2013</span>
                     <div><strong>Gill Adarash Matriculation Higher Secondary School, Chennai</strong></div>
                     <div class="major"><i class="fa fa-book" aria-hidden="true"></i>HSC</div>
                   </li>
-  
-  
+
+
                 </ul>
               </div>
             </div>
-  
+
           </div>
+        </ng-container>
+        <ng-container *ngIf="currentHeader === 1">
+          <ngx-doc-viewer style="width:100%;height:93vh;" [url]="doc" viewer="google" style="width:100%;height:100vh;">
+            <div class="text-center mt-3">Loading...</div>
+          </ngx-doc-viewer>
         </ng-container>
         <ng-container *ngIf="currentHeader === 2">
           <div class="parts" style="margin-bottom:0;">
@@ -181,26 +197,29 @@
                     <div class="skill">
                       <h6>Html/css</h6>
                       <div class="progress">
-                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:80%;"></div>
-  
+                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:80%;">
+                        </div>
+
                       </div>
-  
+
                       <h6>Angular</h6>
                       <div class="progress">
-                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:80%;"></div>
-  
+                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:80%;">
+                        </div>
+
                       </div>
-  
+
                       <h6>Javascript</h6>
                       <div class="progress">
-                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:90%;"></div>
-  
+                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:90%;">
+                        </div>
+
                       </div>
-  
-  
+
+
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="skill-block">
@@ -210,28 +229,28 @@
                       <h6>Photoshop</h6>
                       <div class="progress">
                         <div class="design-percentage" style="width:30%;"></div>
-  
+
                       </div>
-  
+
                       <h6>Illustrator</h6>
                       <div class="progress">
                         <div class="design-percentage" style="width:60%;"></div>
-  
+
                       </div>
-  
+
                       <h6>Figma</h6>
                       <div class="progress">
                         <div class="design-percentage" style="width:45%;"></div>
-  
+
                       </div>
-  
-  
+
+
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
-              
+
               <div class="skill-block">
                 <div class="row">
                   <div class="col-md-11">
@@ -239,29 +258,29 @@
                       <h6>RESPONSIBLE</h6>
                       <div class="progress">
                         <div class="assets-percentage" style="width:85%;"></div>
-  
+
                       </div>
-  
+
                       <h6>Multitasking</h6>
                       <div class="progress">
                         <div class="assets-percentage" style="width:70%;"></div>
-  
+
                       </div>
-  
+
                       <h6>Creative</h6>
                       <div class="progress">
                         <div class="assets-percentage" style="width:65%;"></div>
-  
+
                       </div>
-  
-  
+
+
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
-  
+
           </div>
         </ng-container>
       </div>

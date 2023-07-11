@@ -10,6 +10,9 @@ export class AppComponent {
 
   currentHeader: number = 0;
 
+  doc = 'https://iamaashiqms.netlify.app/assets/files/resume_aashiq_june.pdf';
+
+
   downloadResume() {
     window.open('/assets/files/resume_aashiq_june.pdf', '_blank');
 
@@ -17,5 +20,9 @@ export class AppComponent {
 
   changeCurrentContent(event: any) {
     this.currentHeader = event;
+  }
+
+  contentLoaded() {
+    console.log('File loaded');
   }
 }
