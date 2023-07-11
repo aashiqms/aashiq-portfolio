@@ -86,7 +86,7 @@
         </div>
         <div (click)="changeCurrentContent(1)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 1}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
-            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-file-lines"></i>
           </div>
           <div class="text-sm">
             Resume
@@ -94,23 +94,22 @@
         </div>
         <div  (click)="changeCurrentContent(2)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 2}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
-            <i class="fa-regular fa-user"></i>
-          </div>
+            <i class="fa-solid fa-code"></i>          </div>
           <div class="text-sm">
             Skills
           </div>
         </div>
-        <div  (click)="changeCurrentContent(1)" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
+        <div  (click)="changeCurrentContent(3)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 3}" class="header-card me-3 flex flex-col items-center p-3 rounded-lg ">
           <div>
-            <i class="fa-regular fa-user"></i>
+            <i class="fas fa-briefcase"></i>
           </div>
           <div class="text-sm">
             Work
           </div>
         </div>
-        <div class="header-card flex flex-col items-center p-3 rounded-lg ">
+        <div (click)="changeCurrentContent(4)"  [ngClass]="{'bg-gradient-to-tr from-gray-900 to-indigo-500 text-white active': currentHeader === 4}" class="header-card flex flex-col items-center p-3 rounded-lg ">
           <div>
-            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-address-book"></i>
           </div>
           <div class="text-sm">
             Contact
@@ -182,19 +181,19 @@
                     <div class="skill">
                       <h6>Html/css</h6>
                       <div class="progress">
-                        <div class="coding-percentage" style="width:80%;"></div>
+                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:80%;"></div>
   
                       </div>
   
                       <h6>Angular</h6>
                       <div class="progress">
-                        <div class="coding-percentage" style="width:40%;"></div>
+                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:80%;"></div>
   
                       </div>
   
                       <h6>Javascript</h6>
                       <div class="progress">
-                        <div class="coding-percentage" style="width:80%;"></div>
+                        <div class="coding-percentage bg-gradient-to-tr from-gray-900 to-indigo-500" style="width:90%;"></div>
   
                       </div>
   

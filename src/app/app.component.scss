@@ -169,7 +169,11 @@
 }
 
 .coding-percentage {
-  background-color: #c3512f;
+  background-color: rgb(243 246 246 / var(--tw-bg-opacity));
+  --tw-gradient-from: #8452fa;
+  --tw-gradient-to: rgb(250 82 82 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #dd2496;
      height: 100%;
 }
 
@@ -178,7 +182,11 @@
 }
 
 .assets-percentage {
-  background-color: #33373d;
+  background-color: rgb(243 246 246 / var(--tw-bg-opacity));
+  --tw-gradient-from: #8452fa;
+  --tw-gradient-to: rgb(250 82 82 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #dd2496;
      height: 100%;
 }
 
