@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/aashiqms-github-io",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -110,7 +110,7 @@
         "deploy": {
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/aashiqms-github-io",
             "netlifyToken": "alFvhaVebyK4ykkFf1KHwiISVPN9FfxzuPsDz5SsA0E",
             "siteId": "e024a75b-2a26-40de-967d-a32456153712"
           }
