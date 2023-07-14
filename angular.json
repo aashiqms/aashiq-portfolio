@@ -106,6 +106,14 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/aashiqms-github-io",
+            "netlifyToken": "XmJTMNJnjcnXopT4a-f7OJQTI2GrwVhTZU49xzasRUg",
+            "siteId": "e024a75b-2a26-40de-967d-a32456153712"
+          }
         }
       }
     }
