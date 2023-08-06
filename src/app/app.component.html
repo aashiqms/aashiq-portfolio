@@ -27,12 +27,12 @@
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
-              <li  class="group pl-6">
+              <!-- <li  class="group pl-6">
 
                 <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
 
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
-              </li>
+              </li> -->
 
               <!-- <li class="group pl-6">
 
@@ -41,26 +41,26 @@
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li> -->
 
-              <li class="group pl-6">
+              <li (click)="scroll(work)" class="group pl-6">
 
                 <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Work</span>
 
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
-              <li class="group pl-6">
+              <li (click)="scroll(statistics)" class="group pl-6">
 
                 <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span>
 
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
               </li>
 
-              <li class="group pl-6">
+              <!-- <li class="group pl-6">
 
                 <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>
 
                 <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
-              </li>
+              </li> -->
 
               <li (click)="scroll(contact)" class="group pl-6">
 
@@ -101,11 +101,11 @@
 
             </li>
 
-            <li  class="py-2">
+            <!-- <li  class="py-2">
 
               <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
 
-            </li>
+            </li> -->
 
             <li class="py-2">
 
@@ -113,23 +113,23 @@
 
             </li>
 
-            <li class="py-2">
+            <li  (click)="scroll(work)" class="py-2">
 
               <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Work</span>
 
             </li>
 
-            <li class="py-2">
+            <li (click)="scroll(statistics)" class="py-2">
 
               <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Statistics</span>
 
             </li>
 
-            <li class="py-2">
+            <!-- <li class="py-2">
 
               <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Blog</span>
 
-            </li>
+            </li> -->
 
             <li  (click)="scroll(contact)" class="py-2">
 
@@ -469,7 +469,7 @@
   </div>
 </div> -->
 
-        <div class="container py-16 md:py-20" id="work">
+        <div #work class="container py-16 md:py-20" id="work">
           <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
             My work experience
           </h2>
@@ -577,7 +577,7 @@
           </div>
         </div>
 
-        <div class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
+        <div #statistics class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
           style="background-image: url(/assets/img/experience-figure.png)" id="statistics">
           <div class="container">
             <div class="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full">
