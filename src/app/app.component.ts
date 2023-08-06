@@ -27,4 +27,8 @@ export class AppComponent {
     this.resumeLoaded = true;
     console.log('File loaded');
   }
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+}
 }
