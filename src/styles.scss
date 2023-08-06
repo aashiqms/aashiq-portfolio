@@ -11,19 +11,19 @@ body {
     font-family: 'Inter';
     background: url('assets/images/confectionary.png');
   }
-  
+
   .bg-dark-gray {
     background-color: #272727;
   }
-  
+
   .text-green {
     color: #29f3c3;
   }
-  
+
   .bg-green {
     background-color: #29f3c3;
   }
-  
+
   .border-green {
     border-color: #29f3c3;
   }
@@ -63,18 +63,18 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     --tw-gradient-to: #dd2496;
   }
-  
-  
-  
-  
+
+
+
+
   .left-content {
     padding-right: 0;
   }
-  
+
   .right-content {
     background-color: white;
   }
-  
+
   .left-list {
     width: 100%;
     background-color: #33373d;
@@ -85,17 +85,17 @@ body {
     color: white;
     font-family:Arial;
   }
-  
+
   .left-list i {
     font-size:25px;
     line-height: 52px;
   }
-  
+
   .left-list span {
     float:right;
     font-size:14px;
   }
-  
+
   .big-heading {
     padding: 40px 0 15px 40px;
     border-bottom: 1px solid #d9d9d9;
@@ -103,32 +103,32 @@ body {
     text-transform:uppercase;
     font-family:Sansita;
   }
-  
+
   .headings {
     margin-bottom: 30px;
   }
-  
+
   .info {
     padding: 40px 40px 15px 40px;
   }
-  
+
   .list {
     padding: 0;
     border-width: 1px 1px 0 1px;
     border-color: black;
     border-style: solid;
   }
-  
+
   .list li {
     text-align: center;
-  
+
     border-bottom: 1px solid black;
   }
-  
+
   .para {
     margin-bottom: 35px;
   }
-  
+
   .name {
     width: 30%;
     border-right: 1px solid black;
@@ -136,18 +136,18 @@ body {
     padding: 8px;
     font-weight:600;
   }
-  
+
   .value {
     background-color: #F2F2F2;
     display: inline-block;
     width: 70%;
     padding: 7px;
   }
-  
+
   .parts {
     margin-bottom: 30px;
   }
-  
+
   .progress {
     width: 100%;
     height: 16px;
@@ -156,27 +156,27 @@ body {
     border-radius: 10px;
     background-color: white;
   }
-  
+
   /* .percentage {
     background-color: #efefef;
   } */
-  
+
   .info .skill h6 {
     text-transform: uppercase;
     font-weight:600;
     color:#666666;
   }
-  
+
   .skill-tag {
     text-align: center;
-  
-    
-     
+
+
+
     position: absolute;
     top:80px;
     left: -15px;
     padding: 5px 25px;
-  
+
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -184,20 +184,20 @@ body {
     font-weight: 600;
     color: #666666;
   }
-  
+
   .skill-block {
     margin-bottom: 60px;
   }
-  
+
   .design-percentage {
     background-color: #efefef;
      height: 100%;
   }
-  
+
   #tag1 {
     border: 1px dashed #efefef;
   }
-  
+
   .coding-percentage {
     background-color: rgb(243 246 246 / var(--tw-bg-opacity));
     --tw-gradient-from: #8452fa;
@@ -206,11 +206,11 @@ body {
     --tw-gradient-to: #dd2496;
        height: 100%;
   }
-  
+
   #tag2 {
     border: 1px dashed #c3512f;
   }
-  
+
   .assets-percentage {
     background-color: rgb(243 246 246 / var(--tw-bg-opacity));
     --tw-gradient-from: #8452fa;
@@ -219,22 +219,22 @@ body {
     --tw-gradient-to: #dd2496;
        height: 100%;
   }
-  
+
   #tag3 {
     border: 1px dashed #33373d;
   }
-  
+
   .active {
     background-color: #c3512f;
   }
-  
+
   .timeline ul {
     position:relative;
    padding:0;
   }
-  
+
   .timeline ul:before {
-    content:''; 
+    content:'';
     position:absolute;
     width:4px;
     height:100%;
@@ -242,15 +242,15 @@ body {
    left:0;
     background:#ddd;
   }
-  
+
   .timeline ul li {
     padding:30px 20px;
   }
-  
+
   .timeline ul div {
     padding-left:15px;
   }
-  
+
   .timeline ul li .time {
     color:#aaa;
     position:absolute;
@@ -258,7 +258,7 @@ body {
     background-color:white;
     font-weight:bold;
   }
-  
+
   .cap {
     position:absolute;;
     left:-25px;
@@ -268,51 +268,51 @@ body {
     border:2px solid #aaa;
     padding:15px 12px;
     border-radius:35px;
-  
+
   }
-   
+
   .major {
     margin-left:10px;
     padding:5px;
     font-style:italic;
   }
-  
+
   .major i {
     margin-right:5px;
   }
-  
+
   .hobby {
-    font-size:50px;  
-   display:block; 
+    font-size:50px;
+   display:block;
     margin-bottom:15px;
     color:#c3512f
   }
-  
+
   .hobby-div {
-   
+
     text-align:center;
     padding-bottom:40px;
   }
-  
+
   .hobby-div span {
     text-transform:uppercase;
     font-weight:600;
   }
-  
+
   .left-list:hover {
     background-color: #ff9900;
   }
-  
+
   .left-list span {
     -webkit-animation-duration:1s;
     -webkit-animation-iteration-count:1;
   }
   @media only screen and (max-width: 1000px) {
-    
+
     .left-content {
       padding-right: 15px;
     }
-    
+
     .left-list{
     display:inline-block;
       width:25%;
@@ -329,19 +329,19 @@ body {
       left: 0;
       padding: 0;
     }
-    
+
     .left-list span {
       display:none;
     }
-    
+
     .left-list {
       text-align:center;
     }
-    
+
   }
-  
-  
-  
+
+
+
   h1 {
     position: relative;
     padding: 0;
@@ -352,9 +352,9 @@ body {
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
-    
+
   }
-  
+
   h1 span {
     display: block;
     font-size: 0.5em;
@@ -364,9 +364,9 @@ body {
     font-style: normal;
     font-weight: 600;
   }
-  
-  
-  
+
+
+
   /* === HEADING STYLE #3 === */
   .three h1 {
     font-size: 28px;
